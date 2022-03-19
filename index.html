@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>RGB Convert HEX</title>
+</head>
+
+<body>
+  <nav>
+    <h1 class='headTitle'>RGB Convert to HEX Color</h1>
+  </nav>
+
+  <body>
+    <section class='colorConvert'>
+      <div class='left'>
+        <h3>RGB Input</h3>
+        <p>請輸入介於0-255的正整數</p>
+        <!--  Red Input  -->
+        <div>
+          <label for="redInput">RED Input</label>
+          <input type="number" id='redInput' class='rgb-form-control' required>
+        </div>
+        <!--  Green Input  -->
+        <div>
+          <label for="greebInput">GREEN Input</label>
+          <input type="number" id='greenInput' class='rgb-form-control' required>
+        </div>
+        <!--    Blue Input-->
+        <div>
+          <label for="blueInput">BLUE Input</label>
+          <input type="number" id='blueInput' class='rgb-form-control' required>
+        </div>
+      </div>
+
+      <div class='middle'>
+        <h3>HEX Color</h3>
+        <p>十六進位(Hexadecimal, hex) <br> 由數字<b>0-9</b> / 英文字母<b>A-F</b>組成</p>
+        <!--  HEX Input輸入  -->
+        <input type="text" class='hex' placeholder='#XXXXXX'>
+        <div class='hexColorBox'></div>
+      </div>
+      <div class='right'>
+        <h3>RGB Slider</h3>
+        <div>
+          <!--   紅色Range  -->
+          <label for="redSlide">RED Range</label>
+          <input type="range" class='rgb-range-control' id='redSlide' min='0' max='255' value='0'>
+          <!--         <span class='redValue'>0</span> -->
+        </div>
+        <!--  綠色Range  -->
+        <div>
+          <label for="greenSlide">GREEN Range</label>
+          <input type="range" class='rgb-range-control' id='greenSlide' min='0' max='255' value='0'>
+          <!--         <span class='greenValue'>0</span> -->
+        </div>
+        <!--  藍色Range  -->
+        <div>
+          <label for="blueSlide">BLUE Range</label>
+          <input type="range" class='rgb-range-control' id='blueSlide' min='0' max='255' value='0'>
+          <!--         <span class='blueValue'>0</span> -->
+        </div>
+      </div>
+    </section>
+
+    <script src="./main.js"></script>
+  </body>
+
+</html>
